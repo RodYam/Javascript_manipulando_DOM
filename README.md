@@ -31,3 +31,14 @@ document.appendChild() - Adiciona um elemento HTML.
 document.removeChild() - Remove um elemento HTML.
 document.replaceChild() - Substitui um elemento HTML.
 document.createElement() - Cria um elemento HTML.
+
+
+Lembrete: 
+function dizOi(nome) {
+    console.log("Oi " + nome)
+    console.log("Bem-vindo(a) ao Robotron 2000.")
+}
+
+dizOi("Dakota"); 
+
+// Queremos que todas as vezes que a página for carregada, a função dizOi seja executada. Para isso, nós chamamos esse função colocando o nome dela e abrindo e fechando parênteses, assim a função será executada no momento exato em que ela for lida.
