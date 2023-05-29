@@ -5,6 +5,7 @@
   
   body {
     font-family: "Roboto Mono", monospace;
+    background-color: rgba(0, 0, 0, 0.233);
     min-height: 400px;
     min-width: 450px;
     background-size: 80vh;
@@ -61,12 +62,12 @@
     right: 2%;
   }
 
-  [data-lista="mostrar"] > li {
-    visibility: visible;
+  [data-lista="mostrar"] {
+    display: block;
   }
-  
-  [data-lista="esconder"] > li {
-    visibility: hidden;
+
+  [data-lista="esconder"] {
+    display: none;
   }
   
   [cor="laranja"] {

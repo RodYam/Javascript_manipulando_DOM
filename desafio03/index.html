@@ -6,9 +6,12 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h3>Aluratintas em estoque</h3>
 
-  <ul class="lista" data-lista="AAA">
+  <!--Apenas com teoria não é possível aprender código, então, vamos exercitar a utilização do data-attribute em funções neste desafio. Temos uma lista de cores disponibilizada no código abaixo. Você irá criar um botão que, ao ser clicado, faz aparecer esta lista, e também criará um segundo botão que, ao ser clicado, faz com que a lista de cores volte a sumir.-->
+
+  <button onclick="mostraTintas()" data-tinta >Mostrar tintas em estoque:</button>
+
+  <ul class="lista">
     <li cor="laranja" tipo="tinta-exterior" class="item">Tinta laranja</li>
     <li cor="vermelho" tipo="tinta-interior" class="item">Tinta vermelha</li>
     <li cor="branco" tipo="tinta-interior" class="item">Tinta branca</li>
@@ -17,10 +20,10 @@
     <li cor="preto" tipo="tinta-exterior" class="item">Tinta preta</li>
   </ul>
 
+  <button onclick="ocultaTintas()" data-oculta >Ocultar lista de tintas</button>
+
   <a href="https://alura.com.br/" target="_blank"><img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo"></a>
 
-  <button data-acao="mostrarLista">Mostrar</button>
-  <button data-acao="esconderLista">Esconder</button>
 
 
   <script src="main.js"></script>

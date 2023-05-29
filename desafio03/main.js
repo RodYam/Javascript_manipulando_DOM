@@ -1,12 +1,13 @@
-const lista = document.querySelector("[data-lista]");
-const button = querySelectorAll("[data-acao]");
+const tinta = document.querySelector('[data-tinta]');
+const lista = document.querySelector('.lista');
+const oculta = document.querySelector('[data-oculta]');
 
-button.forEach((elemento) => {
-    elemento.addEventListener("click", () => {
-      if (elemento.dataset.acao === "esconderLista") {
-        lista.dataset.lista = "esconder";
-      } else {
-        lista.dataset.lista = "mostrar";
-      }
-    });
-  });
+tinta.addEventListener('click', (evento) => {
+
+    lista.style.visibility = "visible";
+})
+
+oculta.addEventListener('click', (evento) => {
+
+    lista.style.visibility = "hidden";
+})
